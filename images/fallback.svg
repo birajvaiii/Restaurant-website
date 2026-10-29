@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hot &amp; Spicy food image placeholder</title>
+  <desc id="desc">A cream and yellow placeholder with the Hot &amp; Spicy burger logo.</desc>
+  <rect width="1200" height="900" fill="#FFF9EF"/>
+  <circle cx="600" cy="430" r="250" fill="#FFC928"/>
+  <circle cx="600" cy="430" r="300" fill="none" stroke="#E6392F" stroke-opacity=".18" stroke-width="3" stroke-dasharray="12 16"/>
+  <g transform="translate(465 285)">
+    <rect width="270" height="270" rx="78" fill="#E6392F"/>
+    <path d="M50 112c0-38 38-65 85-65s85 27 85 65H50Z" fill="#FFC928"/>
+    <path d="M48 138h174" stroke="#FFF9EF" stroke-width="18" stroke-linecap="round"/>
+    <path d="M66 166h138l-10 42h-118l-10-42Z" fill="#FFF9EF"/>
+    <circle cx="102" cy="86" r="7" fill="#E6392F"/>
+    <circle cx="135" cy="76" r="7" fill="#E6392F"/>
+    <circle cx="168" cy="86" r="7" fill="#E6392F"/>
+  </g>
+  <text x="600" y="660" text-anchor="middle" fill="#202020" font-family="Arial, sans-serif" font-size="52" font-weight="800" letter-spacing="-2">HOT &amp; SPICY</text>
+  <text x="600" y="708" text-anchor="middle" fill="#6E675F" font-family="Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="4">IMAGE COMING SOON</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hot &amp; Spicy burger logo">
+  <rect width="64" height="64" rx="18" fill="#E6392F"/>
+  <path d="M12 27c0-8.5 9-14.5 20-14.5S52 18.5 52 27H12Z" fill="#FFC928"/>
+  <path d="M12 33h40" stroke="#FFF9EF" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M16 40h32l-2.5 9h-27L16 40Z" fill="#FFF9EF"/>
+  <circle cx="24" cy="21" r="1.8" fill="#E6392F"/>
+  <circle cx="32" cy="18.5" r="1.8" fill="#E6392F"/>
+  <circle cx="40" cy="21" r="1.8" fill="#E6392F"/>
+</svg>

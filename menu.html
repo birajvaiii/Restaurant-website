@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the Hot &amp; Spicy menu — burgers, pizza, fried chicken, fries, sandwiches, milkshakes and cold coffee, all made fresh in Pokhara. Demo prices in NPR.">
+  <meta name="theme-color" content="#FFC928">
+  <title>Our Menu | Hot &amp; Spicy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement">
+    <div class="container announcement__inner">
+      <p><span class="announcement__label">This week</span> Free loaded fries with every combo meal.</p>
+      <p class="announcement__meta">Dine-in only &middot; Bagar, Pokhara</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Hot &amp; Spicy home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" focusable="false">
+            <path d="M5.5 13.2c0-4.1 4.4-7.2 10.5-7.2s10.5 3.1 10.5 7.2H5.5Z" fill="#FFC928"/>
+            <path d="M5 17h22" stroke="#FFF9EF" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M7.2 21h17.6l-1.3 4.3H8.5L7.2 21Z" fill="#FFF9EF"/>
+            <circle cx="11.5" cy="10.5" r=".9" fill="#E6392F"/>
+            <circle cx="16" cy="9.1" r=".9" fill="#E6392F"/>
+            <circle cx="20.5" cy="10.5" r=".9" fill="#E6392F"/>
+          </svg>
+        </span>
+        <span class="logo__type">Hot &amp; <span>Spicy</span><small>Fast food kitchen</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html" class="is-active" aria-current="page">Our Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav-cta" href="menu.html">
+          Explore Menu
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Menu hero -->
+    <section class="menu-hero">
+      <span class="menu-hero__shape menu-hero__shape--one" aria-hidden="true"></span>
+      <span class="menu-hero__shape menu-hero__shape--two" aria-hidden="true"></span>
+      <div class="container menu-hero__inner">
+        <div class="menu-hero__copy">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Our menu</span>
+          </nav>
+          <span class="eyebrow eyebrow--pill"><span class="eyebrow__dot"></span> Freshly made, all day</span>
+          <h1>Our Menu<span>.</span></h1>
+          <p>Big flavours, generous portions and plenty of crunch. Pick a favourite or try something new — it's all made to order.</p>
+        </div>
+        <div class="menu-hero__stat" role="img" aria-label="12 crave-worthy dishes">
+          <strong>12</strong>
+          <span>crave-worthy<br>dishes</span>
+          <i aria-hidden="true">★</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu catalogue -->
+    <section class="section menu-section">
+      <div class="container">
+        <div class="menu-toolbar">
+          <div class="filter-buttons" role="group" aria-label="Filter menu by category">
+            <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="burgers" aria-pressed="false">Burgers</button>
+            <button class="filter-btn" type="button" data-filter="pizza" aria-pressed="false">Pizza</button>
+            <button class="filter-btn" type="button" data-filter="fried-chicken" aria-pressed="false">Fried Chicken</button>
+            <button class="filter-btn" type="button" data-filter="snacks" aria-pressed="false">Snacks</button>
+            <button class="filter-btn" type="button" data-filter="sandwiches" aria-pressed="false">Sandwiches</button>
+            <button class="filter-btn" type="button" data-filter="beverages" aria-pressed="false">Beverages</button>
+          </div>
+          <p class="menu-count" aria-live="polite"><span id="menu-count">12</span> dishes</p>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- Burgers -->
+          <article class="food-card menu-item" data-category="burgers">
+            <div class="food-card__media">
+              <img src="images/burger-classic.jpg" alt="Classic Crunch Burger with cheese, lettuce and pickles" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--yellow">Popular</span>
+              <span class="food-card__price">Rs. 299</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Burgers</span>
+              <div class="food-card__title">
+                <h2>Classic Crunch Burger</h2>
+              </div>
+              <p>Smashed beef patty, cheddar, crisp lettuce, pickles and our signature crunch sauce.</p>
+            </div>
+          </article>
+
+          <article class="food-card menu-item" data-category="burgers">
+            <div class="food-card__media">
+              <img src="images/burger-double.jpg" alt="Double Cheese Burger with two beef patties and melted cheese" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--red">Popular</span>
+              <span class="food-card__price">Rs. 449</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Burgers</span>
+              <div class="food-card__title">
+                <h2>Double Cheese Burger</h2>
+              </div>
+              <p>Two juicy patties, double cheddar, caramelised onions and burger mayo.</p>
+            </div>
+          </article>
+
+          <article class="food-card menu-item" data-category="burgers">
+            <div class="food-card__media">
+              <img src="images/burger-spicy.jpg" alt="Spicy chicken burger with crispy fillet and slaw" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--cream">New</span>
+              <span class="food-card__price">Rs. 379</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Burgers</span>
+              <div class="food-card__title">
+                <h2>Spicy Chicken Burger</h2>
+              </div>
+              <p>Crispy chicken fillet, habanero crunch sauce, cool slaw and pickles.</p>
+            </div>
+          </article>
+
+          <!-- Pizza -->
+          <article class="food-card menu-item" data-category="pizza">
+            <div class="food-card__media">
+              <img src="images/pizza-bbq.jpg" alt="BBQ chicken pizza with mozzarella, red onion and fresh herbs" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--yellow">Chef's pick</span>
+              <span class="food-card__price">Rs. 599</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Pizza</span>
+              <div class="food-card__title">
+                <h2>BBQ Chicken Pizza</h2>
+              </div>
+              <p>Smoky BBQ chicken, mozzarella, red onion and a swirl of house BBQ sauce.</p>
+            </div>
+          </article>
+
+          <article class="food-card menu-item" data-category="pizza">
+            <div class="food-card__media">
+              <img src="images/pizza-margherita.jpg" alt="Margherita pizza with tomato, mozzarella and basil" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--cream">Classic</span>
+              <span class="food-card__price">Rs. 449</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Pizza</span>
+              <div class="food-card__title">
+                <h2>Margherita Pizza</h2>
+              </div>
+              <p>San Marzano tomato, fresh mozzarella and basil on a hand-stretched base.</p>
+            </div>
+          </article>
+
+          <!-- Fried chicken -->
+          <article class="food-card menu-item" data-category="fried-chicken">
+            <div class="food-card__media">
+              <img src="images/fried-chicken.jpg" alt="Crispy fried chicken pieces with a golden crust" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--yellow">Popular</span>
+              <span class="food-card__price">Rs. 199</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Fried chicken</span>
+              <div class="food-card__title">
+                <h2>Crispy Fried Chicken</h2>
+              </div>
+              <p>24-hour buttermilk marinade, craggy golden crust and a house dip on the side.</p>
+            </div>
+          </article>
+
+          <article class="food-card menu-item" data-category="fried-chicken">
+            <div class="food-card__media">
+              <img src="images/chicken-wings.jpg" alt="Sticky glazed chicken wings with sesame seeds" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--red">Special offer</span>
+              <span class="food-card__price">Rs. 349</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Fried chicken</span>
+              <div class="food-card__title">
+                <h2>Chicken Wings</h2>
+              </div>
+              <p>Sticky chilli-glazed wings with toasted sesame and a cooling ranch dip.</p>
+            </div>
+          </article>
+
+          <!-- Snacks -->
+          <article class="food-card menu-item" data-category="snacks">
+            <div class="food-card__media">
+              <img src="images/fries-classic.jpg" alt="Classic French Fries with sea salt" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="food-card__price">Rs. 149</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Fries &amp; snacks</span>
+              <div class="food-card__title">
+                <h2>Classic French Fries</h2>
+              </div>
+              <p>Skin-on potato fries, sea salt and our signature crunchy seasoning.</p>
+            </div>
+          </article>
+
+          <article class="food-card menu-item" data-category="snacks">
+            <div class="food-card__media">
+              <img src="images/fries-loaded.jpg" alt="Loaded cheese fries covered in a generous layer of melted cheese" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--red">Special offer</span>
+              <span class="food-card__price">Rs. 249</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Fries &amp; snacks</span>
+              <div class="food-card__title">
+                <h2>Loaded Cheese Fries</h2>
+              </div>
+              <p>Crispy fries, molten cheese sauce, jalapeños and smoked mayo.</p>
+            </div>
+          </article>
+
+          <!-- Sandwiches -->
+          <article class="food-card menu-item" data-category="sandwiches">
+            <div class="food-card__media">
+              <img src="images/chicken-sandwich.jpg" alt="Crispy chicken sandwich with lettuce and pickles" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--cream">New</span>
+              <span class="food-card__price">Rs. 329</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Sandwiches</span>
+              <div class="food-card__title">
+                <h2>Chicken Sandwich</h2>
+              </div>
+              <p>Crispy chicken, crunchy slaw, pickles and garlic aioli in soft milk bread.</p>
+            </div>
+          </article>
+
+          <!-- Beverages -->
+          <article class="food-card menu-item" data-category="beverages">
+            <div class="food-card__media">
+              <img src="images/chocolate-milkshake.jpg" alt="Thick chocolate milkshake topped with whipped cream" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--cream">Classic</span>
+              <span class="food-card__price">Rs. 199</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Beverages</span>
+              <div class="food-card__title">
+                <h2>Chocolate Milkshake</h2>
+              </div>
+              <p>A thick chocolate shake with whipped cream and dark chocolate shavings.</p>
+            </div>
+          </article>
+
+          <article class="food-card menu-item" data-category="beverages">
+            <div class="food-card__media">
+              <img src="images/cold-coffee.jpg" alt="Iced cold coffee in a glass with a creamy foam top" width="1200" height="900" loading="lazy" onerror="this.onerror=null;this.src='images/fallback.svg';">
+              <span class="badge badge--yellow">New</span>
+              <span class="food-card__price">Rs. 199</span>
+            </div>
+            <div class="food-card__body">
+              <span class="food-card__kicker">Beverages</span>
+              <div class="food-card__title">
+                <h2>Cold Coffee</h2>
+              </div>
+              <p>Double-shot espresso, chilled milk and a silky coffee foam over ice.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="menu-empty" id="menu-empty" hidden>No dishes in this category just yet. Please check back soon.</p>
+
+        <aside class="menu-note">
+          <span class="menu-note__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.5"/></svg>
+          </span>
+          <div>
+            <strong>Please note:</strong> All prices are demo prices in Nepali rupees (NPR) and may be updated by the restaurant. Food is prepared fresh to order; please tell our team about any allergies or dietary requirements.
+          </div>
+        </aside>
+
+        <div class="menu-bottom-cta">
+          <div>
+            <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Can't decide?</span>
+            <h2>Let the combo<br>choose for you.</h2>
+          </div>
+          <div class="menu-bottom-cta__action">
+            <p>Ask our team about today's combo meals, sharing platters and seasonal specials.</p>
+            <a class="btn btn--yellow" href="contact.html">
+              Get in touch
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo logo--light" href="index.html" aria-label="Hot &amp; Spicy home">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false">
+              <path d="M5.5 13.2c0-4.1 4.4-7.2 10.5-7.2s10.5 3.1 10.5 7.2H5.5Z" fill="#FFC928"/>
+              <path d="M5 17h22" stroke="#FFF9EF" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M7.2 21h17.6l-1.3 4.3H8.5L7.2 21Z" fill="#FFF9EF"/>
+              <circle cx="11.5" cy="10.5" r=".9" fill="#E6392F"/>
+              <circle cx="16" cy="9.1" r=".9" fill="#E6392F"/>
+              <circle cx="20.5" cy="10.5" r=".9" fill="#E6392F"/>
+            </svg>
+          </span>
+          <span class="logo__type">Hot &amp; <span>Spicy</span><small>Fast food kitchen</small></span>
+        </a>
+        <p>Big flavours, fresh ingredients and a serious love for crunch. Made daily in Pokhara.</p>
+        <div class="socials" role="group" aria-label="Social media">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Hot &amp; Spicy on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Hot &amp; Spicy on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 8h3V4.5h-3c-2.5 0-4.5 2-4.5 4.5v2H7V15h3v5.5h3.5V15h3l.5-4h-3.5V9c0-.6.4-1 1-1Z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Hot &amp; Spicy on TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.3a4.2 4.2 0 1 1-3-4v3.2a1.3 1.3 0 1 0 1 1.2V4h2a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3>Explore</h3>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Visit us</h3>
+        <address>
+          Bagar, Pokhara<br>
+          Nepal
+        </address>
+        <a href="tel:+9779812345678">9812345678</a>
+        <a href="mailto:support@hotandspicy.com">support@hotandspicy.com</a>
+        <small class="footer__demo">Demo contact details</small>
+      </div>
+
+      <div class="footer__col">
+        <h3>Opening hours</h3>
+        <ul class="footer__hours">
+          <li><span>Mon – Thu</span><span>10 AM – 10 PM</span></li>
+          <li><span>Fri – Sat</span><span>10 AM – 11 PM</span></li>
+          <li><span>Sunday</span><span>11 AM – 10 PM</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> Hot &amp; Spicy. All rights reserved.</p>
+      <p>Demo website &middot; Fictional brand and reviews</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
